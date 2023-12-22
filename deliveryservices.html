@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family:Oswald;
+            color: white;
+            background-image: url(bg.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        header{
+        display: flex;
+        justify-content: center;
+        /* border: 2px solid black; */
+
+        }
+        #title{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 600px;
+            height: 100px;
+            /* border: 2px solid white; */
+            background: rgba(255, 255, 255, 0.2); /* Frosted glass background color with transparency */
+            border-radius: 50px; /* Border radius for rounded corners */
+            padding: 20px; /* Adjust padding as needed */
+            box-shadow:drop-filter: blur(10px); /* Background blur for the glass effect */
+            border: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+            font-size: 1.5em  ;
+            color: rgb(93, 24, 220);
+        }
+        #title h1{
+            background-image: url(https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            background-size: cover;
+        }
+        nav{
+            padding: 30px;
+        }
+        nav ul{
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+        }
+        nav a{
+            text-decoration: none;
+            padding: 17px 40px;
+  border-radius: 50px;
+  cursor: pointer;
+  border: 0;
+  background-color: white;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: all 0.5s ease;
+        }
+        nav a:hover{
+            letter-spacing: 3px;
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+        }
+        nav a:active{
+            letter-spacing: 3px;
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+  transform: translateY(10px);
+  transition: 100ms;
+        }
+        #content{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 90vh;
+            margin: 0;
+            border: 2px solid black;
+            padding: 20px;
+            
+        }
+        #content1{
+            width: 1000px;
+            height: 550px;
+            /* border: 5px solid white; */
+            margin: 50px;
+            background: rgba(255, 255, 255, 0.2); /* Frosted glass background color with transparency */
+        backdrop-filter: blur(10px); /* Background blur for the glass effect */
+        border-radius: 10px; /* Border radius for rounded corners */
+        padding: 20px; /* Adjust padding as needed */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+        }
+        #content1 li{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2em;
+        }
+        #content1 h1{
+            display: flex;
+            justify-content: center;
+            background-image: url(https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            background-size: cover;
+        }
+        #heading{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            width: 500px;
+            /* border: 2px solid white; */
+            background: rgba(255, 255, 255, 0.2); /* Frosted glass background color with transparency */
+        backdrop-filter: blur(10px); /* Background blur for the glass effect */
+        border-radius: 10px; /* Border radius for rounded corners */
+        padding: 20px; /* Adjust padding as needed */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+        background-image: url(https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            background-size: cover;
+            font-size: 3em;
+        }
+        #logos{
+            display: flex;
+            justify-content: center;
+        }
+        #logo1{
+            display: flex;
+            justify-content: center;
+            height: 500px;
+            width: 500px;
+            /* border: 2px solid white; */
+            background: rgba(255, 255, 255, 0.2); /* Frosted glass background color with transparency */
+        backdrop-filter: blur(10px); /* Background blur for the glass effect */
+        border-radius: 10px; /* Border radius for rounded corners */
+        padding: 20px; /* Adjust padding as needed */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+        }
+        #logo2{
+            display: flex;
+            justify-content:center ;
+            height: 500px;
+            width: 500px;
+            /* border: 2px solid white; */
+            background: rgba(255, 255, 255, 0.2); /* Frosted glass background color with transparency */
+        backdrop-filter: blur(10px); /* Background blur for the glass effect */
+        border-radius: 10px; /* Border radius for rounded corners */
+        padding: 20px; /* Adjust padding as needed */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+        }
+        #logo2 img{
+            size: 100px;
+        }
+        #logo3{
+            display: flex;
+            justify-content: center;
+            height: 500px;
+            width: 500px;
+            /* border: 2px solid white; */
+            background: rgba(255, 255, 255, 0.2); /* Frosted glass background color with transparency */
+        backdrop-filter: blur(10px); /* Background blur for the glass effect */
+        border-radius: 10px; /* Border radius for rounded corners */
+        padding: 20px; /* Adjust padding as needed */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+        }
+
+    </style>
+    </head>
+<body>
+    <header>
+<div id="title">
+        <h1>Welcome to Spicesavor Bites</h1>
+    </div>
+</header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="foodmenu.html">Food Menu</a></li>
+            <li><a href="">Delivery Services</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+        </nav>
+        <div id="content">
+            <div id="content1">
+                <p><img src="delivery.png" alt="delivery rider" align="left">
+                    <ul>
+                        <li>
+                    
+                    Experience the epitome of culinary convenience with our restaurant's exemplary delivery service. A beacon of reliability, our delivery team takes pride in ensuring your dining experience transcends the boundaries of our establishment and reaches you with unparalleled efficiency.
+
+Our commitment to excellence shines through in every aspect of our delivery service. From the moment you place your order, expect a seamless and user-friendly interface that caters to your preferences. Timeliness is our hallmark; our dedicated delivery personnel strives to deliver your favorite dishes to your doorstep promptly, preserving the freshness and flavors that make our cuisine exceptional.
+
+Embracing a customer-centric philosophy, we prioritize the safety and satisfaction of our patrons. Our packaging is not just about preserving the temperature; it's a testament to our dedication to presenting each dish with the same care and attention to detail as you would find in our restaurant.
+
+Beyond the delicious cuisine, our delivery service embodies the spirit of convenience and excellence. Whether you're craving a gourmet feast or a quick bite, our delivery service ensures that the gastronomic delights from our kitchen are just a click away, promising an experience that transcends expectations. Trust us to bring the restaurant's signature flavors to your doorstep, making dining in an indulgence to savor.
+</li>
+</ul>
+             </p>
+            </div>
+            <div id="heading">
+                <h1>Our Partners</h1>
+            </div>
+            </div>
+            <div id="logos">
+                <div id="logo1">
+                    <img src="apple.png" alt="">
+                </div>
+                <div id="logo2">
+                    <img src="predator.png" alt="" width="500px">
+                </div>
+                <div id="logo3">
+                    <img src="hp.png" alt="">
+                </div>
+            </div>
+    </body>
+</body>
+</html>
